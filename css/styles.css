@@ -378,10 +378,10 @@ img {
 
 .footer {
   background: #2e2f42;
-  padding: 100px 0;
+  padding: 96px 0;
 }
 
-.footer-studio .logo {
+.footer-logo {
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -391,6 +391,10 @@ img {
   text-transform: uppercase;
   display: inline-block;
   margin-bottom: 16px;
+}
+
+.footer-logo-text {
+  text-align: center;
 }
 
 .logo-colored-footer {
@@ -413,6 +417,7 @@ img {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .footer-list-item-icon {
@@ -437,20 +442,32 @@ img {
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-studio {
-  margin-right: 120px;
+  margin-bottom: 72px;
 }
 
 .footer-social {
-  margin-right: 80px;
+  margin-bottom: 72px;
+}
+
+.footer-subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .footer-form {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-form-text {
@@ -475,6 +492,7 @@ img {
   line-height: 2;
   letter-spacing: 0.04em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  opacity: 0.3;
   color: #ffffff;
 }
 
@@ -869,6 +887,27 @@ img {
   .modal {
     width: 408px;
   }
+
+  .footer {
+    padding: 96px 0;
+  }
+
+  .footer-studio {
+    margin-right: 24px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-logo-text {
+    text-align: left;
+  }
+
+  .social-media-text {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -987,6 +1026,43 @@ img {
   .portfolio-list-item {
     width: calc((100% - 48px) / 3);
     box-shadow: none;
+  }
+
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer-logo-text {
+    text-align: left;
+  }
+
+  .social-media-text {
+    text-align: left;
+  }
+
+  .footer-container {
+    flex-wrap: nowrap;
+  }
+
+  .footer-studio {
+    margin-right: 120px;
+  }
+
+  .footer-social {
+    margin-right: 80px;
+  }
+
+  .footer-form {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .footer-subscribe {
+    flex-wrap: nowrap;
+  }
+
+  .footer-input {
+    opacity: 1;
   }
 
   .modal {
