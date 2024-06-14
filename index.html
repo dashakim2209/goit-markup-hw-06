@@ -127,6 +127,10 @@
           <ul class="team-list">
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/img-worker-1.jpg    1x,
+                  ./images/img-worker-1-2x.jpg 2x
+                "
                 src="./images/img-worker-1.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -170,6 +174,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/img-worker-3.jpg    1x,
+                  ./images/img-worker-3-2x.jpg 2x
+                "
                 src="./images/img-worker-3.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -213,6 +221,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/img-worker-2.jpg    1x,
+                  ./images/img-worker-2-2x.jpg 2x
+                "
                 src="./images/img-worker-2.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -256,6 +268,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/img-worker-4.jpg    1x,
+                  ./images/img-worker-4-2x.jpg 2x
+                "
                 src="./images/img-worker-4.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -306,13 +322,36 @@
           <ul class="portfolio-list">
             <li class="portfolio-list-item">
               <div class="portfolio-cover-wrap">
-                <img
-                  src="./images/img-portfolio.jpg"
-                  alt="Apps"
-                  width="360"
-                  height="300"
-                  class="portfolio-img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-portfolio-mob.jpg    1x,
+                      ./images/img-portfolio-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-portfolio-tab.jpg    1x,
+                      ./images/img-portfolio-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-portfolio.jpg    1x,
+                      ./images/img-portfolio-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <img
+                    src="./images/img-portfolio.jpg"
+                    alt="Apps"
+                    width="360"
+                    height="300"
+                    class="portfolio-img"
+                  />
+                </picture>
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -326,13 +365,36 @@
             </li>
             <li class="portfolio-list-item">
               <div class="portfolio-cover-wrap">
-                <img
-                  src="./images/img-2-portfolio.jpg"
-                  alt="Payment"
-                  width="360"
-                  height="300"
-                  class="portfolio-img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-portfolio-2-mob.jpg    1x,
+                      ./images/img-portfolio-2-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-portfolio-2-tab.jpg    1x,
+                      ./images/img-portfolio-2-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-2-portfolio.jpg    1x,
+                      ./images/img-portfolio-2-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <img
+                    src="./images/img-2-portfolio.jpg"
+                    alt="Payment"
+                    width="360"
+                    height="300"
+                    class="portfolio-img"
+                  />
+                </picture>
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
