@@ -1184,10 +1184,12 @@ img {
 
   .footer-studio {
     margin-right: 120px;
+    margin-bottom: 0;
   }
 
   .footer-social {
     margin-right: 80px;
+    margin-bottom: 0;
   }
 
   .footer-form {
