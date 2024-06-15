@@ -1210,6 +1210,7 @@ img {
 
   .footer-container {
     flex-wrap: nowrap;
+    gap: 0;
   }
 
   .footer-studio {
